@@ -1,6 +1,6 @@
 // ================= CONFIG =================
-const CHAT_API_URL = "https://new-19-h8j7.onrender.com/api/chat";
-const IMAGE_API_URL = "https://new-19-h8j7.onrender.com/api/image";
+const CHAT_API_URL = "https://neww-9.onrender.com/api/chat";
+const IMAGE_API_URL = "https://neww-9.onrender.com/api/image";
 
 // ================= ELEMENTS =================
 const menuBtn = document.getElementById("menuBtn");
@@ -64,7 +64,8 @@ function renderChatList(filter = "") {
   chatHistory.innerHTML = "";
   const filteredChats = chats.filter(c => {
     if (filter && !c.title.toLowerCase().includes(filter.toLowerCase())) return false;
-    return c.messages.some(m => m.type === "ai" && m.text) || c.messages.some(m => m.type === "user" && m.text);
+    return c.messages.some(m => m.text || m.image || m.file);
+
   });
 
   filteredChats.forEach(chat => {
