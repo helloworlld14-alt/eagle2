@@ -1,6 +1,6 @@
 // ================= CONFIG =================
-const CHAT_API_URL = "https://neww-9.onrender.com/api/chat";
-const IMAGE_API_URL = "https://neww-9.onrender.com/api/image";
+const CHAT_API_URL = "https://eagle2-amie.onrender.com/api/chat";
+const IMAGE_API_URL = "https://eagle2-amie.onrender.com/api/image";
 
 // ================= ELEMENTS =================
 const menuBtn = document.getElementById("menuBtn");
